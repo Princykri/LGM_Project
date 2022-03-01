@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Irish Grover", cursive;
+}
+body {
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #dac259 10%, #ca6e39 100%);
+}
+
+.wrapper {
+  margin: 100px auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(218, 210, 226);
+  border-radius: 7px;
+  padding: 25px;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.wrapper .inputArea {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+input {
+  width: 85%;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding-left: 15px;
+}
+.inputArea button {
+  width: 40px;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: linear-gradient(to bottom, #dac259 0%, #ca6e39 100%);
+  background-color: black;
+  border-radius: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 3px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.inputArea button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mylist {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.mylist li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  margin-bottom: 5px;
+  cursor: auto;
+  overflow: hidden;
+}
+
+.mylist li span {
+  position: absolute;
+  right: -45px;
+  cursor: pointer;
+  width: 45px;
+  text-align: center;
+  border-radius: 2px;
+  background: rgb(145, 138, 138);
+  transition: all 0.3s ease;
+}
+
+.mylist li:hover span {
+  right: 0px;
+}
+
+.clear {
+  margin-left: 40%;
+  background: #ccc;
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px;
+}
+.clear:hover {
+  background: rgb(145, 138, 138);
+}
+
+footer {
+  text-align: end;
+  margin-right: 10px;
+  position: static;
+  margin-bottom: 100px;
+}
