@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(207, 214, 221);
+     padding: 0;
+     margin: 0;
+ }
+  #nav{
+     width: 100%;
+     background-color:rgb(11, 12, 26);
+     vertical-align: top;
+     height: 60px;
+     text-align: center;
+     display: inline-block;      /* make nav bar sticke to top */
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+ #logo{
+     width: 5%;
+     height: 70%;
+     padding: 0px 5px 5px;
+     border-radius: 50%;
+     float: left;             /*  logo and list in same line*/
+     margin-right: 20px;
+     margin-top: 7px;
+ }
+ 
+ #nav ul li{
+      color:aliceblue;
+      display: inline;
+     font-size: 2 rem; 
+     text-transform: uppercase;
+     height: 100%;
+     margin-right: 50px;
+     padding: 20px;
+     
+    
+ }
+ 
+ #nav ul li:hover{
+     background-color:rgb(20, 21, 39);
+     transition: 0.5s;
+ }
+ 
+ .checkbtn{
+     float: right;
+     color: aliceblue; 
+     font-size: 30px;
+     line-height: 60px;
+     margin-right: 10px;
+     cursor: pointer;
+ }
+ #checkbox{
+     display: none;
+ }
+
+ #click{
+        color:aliceblue;
+        background-color:#032633 ;
+        font-size: 2 rem; 
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 7px;
+        border-radius: 3px;
+        
+ }
+ #click:hover{
+     cursor: pointer;
+     background-color:rgb(141, 126, 126) ;
+     border-radius: none;
+    box-shadow: inset -5px -5px 12px #032633,
+                       5px 5px 12px rgba(15, 15, 15, 0.16);;
+    
+ }
+ #content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    column-gap: 23px;
+}
+
+
+span{
+    display: block;
+}
+label {
+    display: inline;
+}
+
+.container {
+    margin-top: 150px;
+    margin-left: 250px;
+    background-color: rgb(11, 12, 26);
+    height: 400px;
+    width: 25%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container:hover{
+    box-shadow: inset -10px -10px 12px #b5c1c5,
+                       5px 5px 12px rgba(177, 16, 16, 0.16);
+}
+
+.UserContent {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    left: 50px;
+    color: rgb(176, 204, 166);
+    font-size: large;
+}
+
+.img {
+  
+    position: relative;
+    display: flex;
+    top: 50px;
+    height: 10rem;
+    width: 10rem;
+    left: 30%;
+    border-radius: 40%;
+}
+ 
+ 
+ 
+ 
+ @media (max-width:950px){                /*min -0 ---  max-900px */
+      #nav  ul li{
+         color: aliceblue;
+         font-size: 12px ; 
+         margin-right: 3px;
+         transition: 0.5s;
+     }
+     .checkbtn{
+        
+        font-size: 25px;
+     }
+ }
+ @media(max-width:609px){
+     #nav ul li{
+         display: block; 
+         transition: 0.5s;
+         
+     }
+    ul{
+         position: fixed;    /*fix the position*/
+         margin-top: 60px;    /*  margin from the top */
+         background-color: #0a3444;
+         transition: all 0.5s;
+         right: -100%;   /* hide the content*/
+         
+     }
+     li:hover{
+         cursor: pointer;
+         color: #0082e6;
+         font-weight: bold;
+     }
+     #checkbox:checked ~ ul{
+         transition: 1s;
+         left:-90%;
+ 
+     }
+ }
+ 
+
